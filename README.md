@@ -13,4 +13,4 @@
 
 
 
-因為是自己使用，故沒有啟用註冊user的功能，如要有用帳號需先輸入manage.py createsuperuser
+因為是自己使用，故沒有啟用註冊user的功能，如需要帳號需先輸入manage.py createsuperuser
