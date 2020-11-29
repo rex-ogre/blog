@@ -1,0 +1,27 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<form method="post">
+{% csrf_token %}
+    <article class="media content-section">
+        
+                <div class="media-body">
+                <div class="article-metadata">
+                    <a class="mr-2" href=""></a>
+                    <small class="text-muted"></small>
+                    
+
+
+                        <div>
+                        <a class="btn btn-secondary btn-sm mt-1 mb-1"  href="{% url 'blog-home'  %}">已經登出，點擊回首頁</a>
+                        <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'login' %}" >再登入</a>
+
+                        </div>
+                        
+                    
+                </div>
+                <h2 class="article-title">{{ object.title }}</h2>
+                <p1 class="article-content">{{ object.text}}</p1>
+                </div>
+      </article>
+    </form>
+{% endblock content %}  
